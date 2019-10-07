@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+ int main() {
+	 string command = "";
+	 bool started = false;
+
+	 while (true) {
+		 cout << ("> ");
+		 cin >> command;
+		 if (command == "start") {
+			 if (started == true) {
+				 cout << "Car is already started\n";
+			 }
+			 else {
+				 started = true;
+				 cout << "Car started - ready to Go\n";
+			 }
+		 }
+		 else if (command == "stop") {
+			 if (not started) {
+				 cout << "Car is already stopped\n";
+			 }
+			 else {
+				 started = false;
+				 cout << "Car stopped\n";
+			 }
+		 
+		 }
+		 else if (command == "help") {
+			 cout << "start - to start the car\n" << endl;
+			 cout << "stop - to stop the car\n" << endl;
+			 cout << "quit - to quit the programm\n" << endl;
+		 }
+		 else if (command == "quit") {
+			 break;
+		 }
+		 else
+		 {
+			 cout << "Sorry, I don't understand :(\n";
+		 }
+	 }
+}
