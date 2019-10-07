@@ -1,0 +1,34 @@
+
+int main() {
+  double earth_weight;
+  int planet;
+  
+  std::cout << "What is your Earth Weight?\n";
+  std::cin >> earth_weight;
+  
+  std::cout << "Number of planet you want to fight on: \n";
+  std::cin >> planet;
+  
+  switch (planet) {
+    case 1:
+      std::cout << "Your weight on Venus is: " << earth_weight * 0.78;
+      break;
+    case 2:
+      std::cout << "Your weight on Mars is: " << earth_weight * 0.39;
+      break;
+    case 3:
+      std::cout << "Your weight on Jupiter is: " << earth_weight * 2.65;
+      break;
+    case 4:
+      std::cout << "Your weight on Saturn is: " << earth_weight * 1.17;
+      break;
+    case 5:
+      std::cout << "Your weight on Uranus is: " << earth_weight * 1.05;
+      break;
+    case 6:
+      std::cout << "Your weight on Neptune is: " << earth_weight * 1.23;
+      break;
+    default:
+      std::cout << "Invalid";
+      break;
+  }
