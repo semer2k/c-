@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+
+	int num1, num2;
+
+	//This will ask you to enter numbers
+	cout << "Please enter two numbers: " << endl;
+	//First number ask
+	cout << "First number: ";
+	cin >> num1; 
+
+	//Second number ask
+	cout << "Second number: ";
+	cin >> num2;
+
+	//+, -, *, /
+
+	cout << "The summ of numbers is: " << num1 + num2 << endl;
+	cout << "The difference of numbers is: " << num1 - num2 << endl;
+	cout << "The division of numbers is: " << num1 / num2 << endl;
+	cout << "The multiplication of numbers is: " << num1 * num2 << endl;
+
+
+
+
+}
